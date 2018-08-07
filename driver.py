@@ -1,0 +1,34 @@
+# driver.py: main script for Python implementation of
+# CellFIT, which I named PyCellFIT for descriptive effects.
+# 
+# Created 08/07/18 by XJ
+#
+# Edits:
+#
+#
+
+# INPUT FINITE ELEMENT OBJECT
+
+
+
+# ANGLE DETERMINATION
+
+
+
+# CURVATURE DETERMINATION
+
+
+
+# CONSTRUCT YOUNG'S EQUATIONS
+
+
+
+# ASSEMBLE, CONSTRAIN AND SOLVE TENSION EQS
+
+
+
+# CONSTRUCT LAPLACE EQUATIONS
+
+
+
+# ASSEMBLE, CONSTRAIN AND SOLVE PRESSURE EQS
