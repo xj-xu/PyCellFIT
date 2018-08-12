@@ -1,0 +1,39 @@
+------------------------------------------------------------
+dataflow.txt: describing the high-level i/o of data for different
+steps taken by CellFIT.
+
+Created 08/11/18 by XJ
+------------------------------------------------------------
+
+# MESH GENERATION
+Input: Segmented image in raster form
+		 e.g. /ZazuCellFITSoftware/Data/Dragonfly/SegmentedImages
+Ouput: Finite element object with 'BEGIN_FILE'
+		 e.g. ZazuCellFITSoftware/Data/Dragonfly/Meshes/Mesh001
+Main:
+
+# ANGLE DETERMINATION
+Input: tempdate.txt Model.cpp line 81
+Ouput: fileName.c_str()
+Main: Zazu/FileIO.cpp WriteLayerData() line 36
+
+# CURVATURE DETERMINATION
+Input:
+Ouput:
+Main:
+
+# CONSTRUCT SETS OF EQUATIONS
+Input:
+Ouput: sprintf(text, "%d,%.9f,%.9f",
+					data->m_NodeIndexMap[i],
+					data->du[i*data->numDOFperNode],
+					data->du[i*data->numDOFperNode+1])
+		 Model.cpp line 945
+Main: BuildEquations()
+
+# SOLVE SETS OF EQUATIONS
+Input: 
+Ouput: Output.csv
+		 e.g. ZazuCellFITSoftware/Data/Synthetic/Meshes/Mesh001
+		 		/synthetic_Output.csv
+Main:
