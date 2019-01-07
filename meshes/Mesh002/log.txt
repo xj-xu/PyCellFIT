@@ -1,0 +1,28 @@
+# Exclude outside edges
+CellFIT2D
+Using Circle Fit Tangents
+Using Least Squares Solution Method
+Including Edges with only 2 nodes
+Solving for 349 edge Tensions with 219 X 2 = 438 Equations
+.......
+4	2 node edges
+3	3 node edges
+337	4 node edges
+31	5 node edges
+21	6+ node edges
+Saving Mesh: C:\Users\HutsonLab\Desktop\CellFIT\ZazuCellFITSoftware\Data\Mesh002\Outline_0_000.txt
+CellFIT2D Solver...
+
+# Include outside edges
+CellFIT2D
+Using Circle Fit Tangents
+Using Least Squares Solution Method
+Including Edges with only 2 nodes
+Solving for 399 edge Tensions with 263 X 2 = 526 Equations
+.......
+4	2 node edges
+3	3 node edges
+337	4 node edges
+31	5 node edges
+24	6+ node edges
+Saving Mesh: C:\Users\HutsonLab\Desktop\CellFIT\ZazuCellFITSoftware\Data\Mesh002\Outline_0_000.txt
