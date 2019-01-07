@@ -27,8 +27,8 @@ Simbadata structure: Map of nodes, edges...
 
 #### 3. FIM Formulation
 OnBnClickedButtonIbficalanddisp(): Calculates and tangent vectors and circle fits.
-	- Create pModel copy
-	- some processing
+	+ Create pModel copy  
+	+ some processing
 		CSMeshAlgs::DeleteDanglingCells(subModel)
 			Located in Library/SimbaData/Source/Algorithms/MeshAlgs.cpp line 1939
 		subModel->SetCell2DEasyLookups();
@@ -38,13 +38,14 @@ OnBnClickedButtonIbficalanddisp(): Calculates and tangent vectors and circle fit
 			Located in Library/SimbaData/Source/Elements/MusicalCell2D.cpp
 		mus.FindAndFixQuadJunctions();
 			Defined in MusicalCell2D.cpp line 1794	
-	- copy results back to original copy
-	- save
+	+ copy results back to original copy
+	+ save
 
 #### 4. FIM Solver
-OnBnClickedButtonIbfisolve(): solves for tensions and/or pressures.
+OnBnClickedButtonIbfisolve(): solves for tensions and/or pressures.  
+	+ IBFISolveMesh();
 OnBnClickedButtonIbfisolveall(): solves for all meshes in folder.
-
+ The reaso
 #### 5. Display of Results
 OnBnClickedCheckIbfishowcircles()
 OnBnClickedCheckIbfishowtensions()
