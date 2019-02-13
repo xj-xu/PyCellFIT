@@ -30,7 +30,7 @@ def enablePrint():
 
 # Enter directory of the .txt file containing FEM data
 #dir = '/Users/xj/Desktop/PHYS_4998/Mesh002/Outline_0_000.txt'
-dir = '/Users/xj/Desktop/PHYS_4998/hex_test_images/nearseg_hex150/CellFIT_MeshOfHexagonalCells150.txt'
+dir = '/Users/xj/PyCellFIT/meshes/hex_test_images/nearseg_hex150/CellFIT_MeshOfHexagonalCells150.txt'
 
 N_TJ = 0    # Number of triple junctions
 N_Ten = 0 # Number of tensions
@@ -404,7 +404,7 @@ fig = plt.figure(figsize=(25/3, 6.25))
 
 #dir_cellfit = '/Users/xj/Desktop/PHYS_4998/Mesh002/Outline_0_000_Output_exclude_outside_edges.csv'
 #dir_cellfit2 = '/Users/xj/Desktop/PHYS_4998/Mesh002/Outline_0_000_Output_include_outside_edges.csv'
-dir_cellfit = '/Users/xj/Desktop/PHYS_4998/hex_test_images/nearseg_hex90/CellFIT_MeshOfHexagonalCells090_Output.csv'
+dir_cellfit = '/Users/xj/PyCellFIT/meshes/hex_test_images/nearseg_hex90/CellFIT_MeshOfHexagonalCells090_Output.csv'
 gamma_c = np.zeros(N_Ten)
 gamma_c_inc = np.zeros(N_Ten+50)
 CellFIT_results_EdgeID = np.zeros(N_Ten, dtype=int)
@@ -462,3 +462,4 @@ print('Std =', gamma_p.std())
 figure(3)
 plt.hist(gamma_p, bins=30, density=True)
 plt.title('Python results')
+plt.show()
