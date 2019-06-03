@@ -30,7 +30,7 @@ def enablePrint():
 
 # Enter directory of the .txt file containing FEM data
 #dir = '/Users/xj/Desktop/PHYS_4998/Mesh002/Outline_0_000.txt'
-dir = '/Users/xj/PyCellFIT/meshes/hex_test_images/nearseg_hex150/CellFIT_MeshOfHexagonalCells150.txt'
+dir = '/Users/xj/PyCellFIT/meshes/011719_wound/outline/outline.txt'
 
 N_TJ = 0    # Number of triple junctions
 N_Ten = 0 # Number of tensions
@@ -281,11 +281,6 @@ plt.title(dir)
 plt.grid()
 ax.margins(0.1)
 #plt.scatter(X, Y, marker='o', color='black')
-plt.plot(387, -46, marker='o')
-plt.plot(397, -44, marker='o')
-plt.plot(378, -49, marker='o')
-plt.plot(378, -59, marker='o')
-plt.plot(378, -69, marker='o')
 plt.show()
 # plt.savefig('mesh002_tj_only_visualization')
 
